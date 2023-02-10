@@ -1,0 +1,72 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form * {
+  border: 0;
+  font: inherit;
+  background-color: transparent;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* general */
+html,
+body {
+  height: 100%;
+}
+
+/* google font: Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* custom properties */
+:root {
+  /* font */
+  --font-family: "Inter", sans-serif;
+  --font-size-24: 24px;
+  --font-size-16: 16px;
+  --font-size-14: 14px;
+
+  /* color */
+  --black: #000;
+  --dark-gray: #504e4e;
+  --blue: #82cfff;
+  --pink: #ff9c9c;
+  --green: #abe5bc;
+  --beige: #fffaf0;
+
+  /* shadow */
+  --green-shadow: 6px 6px 0px var(--green);
+  --blue-shadow: 6px 6px 0px var(--blue);
+  --green-shadow: 6px 6px 0px var(--green);
+
+  /* space */
+  --space: 4px;
+  --space: 8px;
+  --space: 16px;
+  --space: 24px;
+  --space: 32px;
+}
