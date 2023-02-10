@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Management System - Login page</title>
     <!-- main css -->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/entry-page.css" />
   </head>
   <body>
+    <div class="container flex items-center">
+      <div>
+        <h1 class="welcoming-title">Welcome back</h1>
+        <form class="form">
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" id="email" class="input" />
+
+          <label for="password" class="label">Password</label>
+          <input type="password" name="password" id="password" class="input" />
+
+          <button type="submit" class="cta-btn">Log in</button>
+        </form>
+        <p class="sign-up-prompt">
+          Don’t have an account? <a href="#" class="sign-up-link">Sign up</a>
+        </p>
+      </div>
+    </div>
     <!-- import IconifyIcon web component -->
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
   </body>

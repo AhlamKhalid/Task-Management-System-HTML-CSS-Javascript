@@ -1,0 +1,52 @@
+.welcoming-title {
+  font-weight: 600;
+  font-size: var(--font-size-24);
+}
+
+.form {
+  margin-top: var(--space-32);
+  max-width: 338px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: var(--font-size-16);
+  display: inline-block;
+  margin-top: var(--space-16);
+}
+
+.label:first-child {
+  margin-top: 0;
+}
+
+.input {
+  border: 2px solid var(--black);
+  border-radius: var(--radius-8);
+  width: 100%;
+  padding: var(--space-16);
+  height: var(--input-height);
+  margin-top: var(--space-16);
+}
+
+.cta-btn {
+  background-color: var(--pink);
+  border: 2px solid var(--black);
+  box-shadow: 4px 4px 0px var(--black);
+  border-radius: var(--radius-8);
+  width: 100%;
+  margin-top: var(--space-32);
+  height: var(--input-height);
+  font-weight: 600;
+}
+
+.sign-up-prompt {
+  font-weight: 500;
+  font-size: var(--font-size-14);
+  margin-top: var(--space-32);
+  text-align: center;
+}
+
+.sign-up-link {
+  font-weight: 600;
+  text-decoration: underline;
+}

@@ -8,7 +8,8 @@
 }
 
 form * {
-  border: 0;
+  border: none;
+  outline: none;
   font: inherit;
   background-color: transparent;
 }
@@ -55,7 +56,7 @@ img {
   /* shadow */
   --green-shadow: 6px 6px 0px var(--green);
   --blue-shadow: 6px 6px 0px var(--blue);
-  --green-shadow: 6px 6px 0px var(--green);
+  --pink-shadow: 6px 6px 0px var(--pink);
 
   /* space */
   --space-4: 4px;
@@ -63,6 +64,12 @@ img {
   --space-16: 16px;
   --space-24: 24px;
   --space-32: 32px;
+
+  /* radius */
+  --radius-8: 8px;
+
+  /* form elements */
+  --input-height: 45px;
 }
 
 /* general */
@@ -72,11 +79,26 @@ body {
 }
 
 body {
-  padding-inline: var(--space-16);
+  padding: var(--space-16);
   background-color: var(--beige);
+  font-family: var(--font-family);
 }
 
 .container {
   max-width: 1200px;
   margin-inline: auto;
+  height: 100%;
+}
+
+/* utility classes */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
 }
