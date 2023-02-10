@@ -33,12 +33,6 @@ img {
   max-width: 100%;
 }
 
-/* general */
-html,
-body {
-  height: 100%;
-}
-
 /* google font: Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
@@ -64,9 +58,25 @@ body {
   --green-shadow: 6px 6px 0px var(--green);
 
   /* space */
-  --space: 4px;
-  --space: 8px;
-  --space: 16px;
-  --space: 24px;
-  --space: 32px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+}
+
+/* general */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding-inline: var(--space-16);
+  background-color: var(--beige);
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
 }
