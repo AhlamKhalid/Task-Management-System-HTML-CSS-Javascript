@@ -19,6 +19,7 @@
 .label {
   font-weight: 600;
   font-size: var(--font-size-16);
+  /* to apply margins */
   display: inline-block;
   margin-top: var(--space-16);
 }
@@ -39,7 +40,7 @@
 .cta-btn {
   background-color: var(--pink);
   border: 2px solid var(--black);
-  box-shadow: 4px 4px 0px var(--black);
+  box-shadow: var(--black-shadow);
   border-radius: var(--radius-8);
   width: 100%;
   margin-top: var(--space-32);
@@ -67,11 +68,13 @@
   }
 
   .row {
+    /* bring columns beside each other */
     display: flex;
   }
 
   .left-column,
   .right-column {
+    /* equal-width columns */
     width: 50%;
   }
 

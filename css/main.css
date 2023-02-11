@@ -1,4 +1,4 @@
-/* reset */
+/*** reset ***/
 *,
 *::before,
 *::after {
@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+/* elements inside forms */
 form * {
   border: none;
   outline: none;
@@ -57,6 +58,7 @@ img {
   --green-shadow: 6px 6px 0px var(--green);
   --blue-shadow: 6px 6px 0px var(--blue);
   --pink-shadow: 6px 6px 0px var(--pink);
+  --black-shadow: 4px 4px 0px var(--black);
 
   /* space */
   --space-4: 4px;
