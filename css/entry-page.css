@@ -48,14 +48,16 @@
   font-weight: 600;
 }
 
-.sign-up-prompt {
+.sign-up-prompt,
+.login-in-prompt {
   font-weight: 500;
   font-size: var(--font-size-14);
   margin-top: var(--space-32);
   text-align: center;
 }
 
-.sign-up-link {
+.sign-up-link,
+.log-in-link {
   font-weight: 600;
   text-decoration: underline;
 }
@@ -80,10 +82,5 @@
   .right-column {
     /* equal-width columns */
     width: 50%;
-  }
-
-  .gears-img {
-    height: 100%;
-    object-fit: cover;
   }
 }
