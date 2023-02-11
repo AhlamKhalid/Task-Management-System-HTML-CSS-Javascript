@@ -1,3 +1,11 @@
+.left-column {
+  padding: var(--space-16);
+}
+
+.right-column {
+  display: none;
+}
+
 .welcoming-title {
   font-weight: 600;
   font-size: var(--font-size-24);
@@ -49,4 +57,26 @@
 .sign-up-link {
   font-weight: 600;
   text-decoration: underline;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .right-column {
+    display: block;
+    border-left: 2px solid var(--black);
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .left-column,
+  .right-column {
+    width: 50%;
+  }
+
+  .gears-img {
+    height: 100%;
+    object-fit: cover;
+  }
 }

@@ -79,7 +79,6 @@ body {
 }
 
 body {
-  padding: var(--space-16);
   background-color: var(--beige);
   font-family: var(--font-family);
 }
@@ -101,4 +100,12 @@ body {
 
 .items-center {
   align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.height-full {
+  height: 100%;
 }

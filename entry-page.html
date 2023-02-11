@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="./css/entry-page.css" />
   </head>
   <body>
-    <div class="container flex items-center">
-      <div>
+    <div class="row height-full">
+      <!-- left side -->
+      <div
+        class="left-column flex flex-column height-full justify-center items-center"
+      >
         <h1 class="welcoming-title">Welcome back</h1>
         <form class="form">
           <label for="email" class="label">Email</label>
@@ -25,6 +28,10 @@
         <p class="sign-up-prompt">
           Don’t have an account? <a href="#" class="sign-up-link">Sign up</a>
         </p>
+      </div>
+      <!-- right side -->
+      <div class="right-column">
+        <img src="./img/gears.png" class="gears-img" />
       </div>
     </div>
     <!-- import IconifyIcon web component -->
