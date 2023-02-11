@@ -65,6 +65,10 @@
   .right-column {
     display: block;
     border-left: 2px solid var(--black);
+    background-image: url("../img/gears.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .row {
