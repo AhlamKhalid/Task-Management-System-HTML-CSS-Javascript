@@ -35,9 +35,6 @@ img {
   max-width: 100%;
 }
 
-/* google font: Inter */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-
 /* custom properties */
 :root {
   /* font */
@@ -53,6 +50,7 @@ img {
   --pink: #ff9c9c;
   --green: #abe5bc;
   --beige: #fffaf0;
+  --white: #fff;
 
   /* shadow */
   --green-shadow: 6px 6px 0px var(--green);
@@ -85,10 +83,11 @@ body {
   font-family: var(--font-family);
 }
 
-.container {
-  max-width: 1200px;
+.max-width-container {
+  /* include padding values */
+  max-width: 1232px;
   margin-inline: auto;
-  height: 100%;
+  padding-inline: var(--space-16);
 }
 
 /* utility classes */
@@ -98,6 +97,10 @@ body {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .items-center {
