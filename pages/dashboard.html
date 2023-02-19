@@ -40,7 +40,6 @@
               name="view-option"
               value="list"
               class="radio-input"
-              checked
             />
             <label for="list" class="radio-label">
               <!-- list-bulleted -->
@@ -60,6 +59,7 @@
               name="view-option"
               value="board"
               class="radio-input"
+              checked
             />
             <label for="board" class="radio-label">
               <!-- grid -->
@@ -77,152 +77,341 @@
       <!-- tasks -->
       <div class="max-width-container">
         <!-- lists view -->
-        <div class="list-container pink">
-          <h2 class="list-header">
-            <span class="circle pink"></span><span class="text">To do</span>
-          </h2>
-          <ul class="tasks-list">
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-          </ul>
+        <div class="list-view">
+          <div class="list-container pink">
+            <h2 class="list-header">
+              <span class="circle pink"></span><span class="text">To do</span>
+            </h2>
+            <ul class="tasks-list">
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="list-container blue">
+            <h2 class="list-header">
+              <span class="circle blue"></span><span class="text">Doing</span>
+            </h2>
+            <ul class="tasks-list">
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="list-container green">
+            <h2 class="list-header">
+              <span class="circle green"></span><span class="text">Done</span>
+            </h2>
+            <ul class="tasks-list">
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <p class="task-name">Design UI</p>
+                  <p class="task-due-date">Due on January 7, 2020</p>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="list-container blue">
-          <h2 class="list-header">
-            <span class="circle blue"></span><span class="text">Doing</span>
-          </h2>
-          <ul class="tasks-list">
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="list-container green">
-          <h2 class="list-header">
-            <span class="circle green"></span><span class="text">Done</span>
-          </h2>
-          <ul class="tasks-list">
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-            <li class="task-item">
-              <button class="task-button">
-                <p class="task-name">Design UI</p>
-                <p class="task-due-date">Due on January 7, 2020</p>
-                <!-- arrow -->
-                <iconify-icon
-                  icon="material-symbols:arrow-back-ios-rounded"
-                  style="color: black"
-                  width="18"
-                  height="18"
-                  class="arrow-icon"
-                ></iconify-icon>
-              </button>
-            </li>
-          </ul>
+        <!-- board view -->
+        <div class="board-view">
+          <!-- list -->
+          <div class="list">
+            <h2 class="list-header">
+              <span class="circle pink"></span><span class="text">To do</span>
+            </h2>
+            <ul class="tasks-list pink">
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- list -->
+          <div class="list">
+            <h2 class="list-header">
+              <span class="circle blue"></span><span class="text">Doing</span>
+            </h2>
+            <ul class="tasks-list blue">
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- list -->
+          <div class="list">
+            <h2 class="list-header">
+              <span class="circle green"></span><span class="text">Done</span>
+            </h2>
+            <ul class="tasks-list green">
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+              <li class="task-item">
+                <button class="task-button">
+                  <div>
+                    <p class="task-name">Design UI</p>
+                    <p class="task-due-date">Due on January 7, 2020</p>
+                  </div>
+                  <!-- arrow -->
+                  <iconify-icon
+                    icon="material-symbols:arrow-back-ios-rounded"
+                    style="color: black"
+                    width="18"
+                    height="18"
+                    class="arrow-icon"
+                  ></iconify-icon>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
