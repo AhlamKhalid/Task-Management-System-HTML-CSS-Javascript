@@ -37,14 +37,10 @@
 .radio-container {
   width: 100px;
   cursor: pointer;
-}
-
-.radio-container:first-child {
   border-left: 2px solid var(--black);
 }
 
 .radio-container:last-child {
-  border-left: 2px solid var(--black);
   border-right: 2px solid var(--black);
 }
 
@@ -73,61 +69,59 @@
 
 /* lists view */
 .list-view {
-  display: none;
+  /* display: none; */
 }
 
-.list-container {
+.list-view .list-container {
   margin-top: var(--space-32);
   background-color: var(--white);
   border: 2px solid var(--black);
   border-radius: var(--radius-8);
 }
 
-.list-container.pink {
+.list-view .list-container.pink {
   box-shadow: var(--pink-shadow);
 }
 
-.list-container.blue {
+.list-view .list-container.blue {
   box-shadow: var(--blue-shadow);
 }
 
-.list-container.green {
+.list-view .list-container.green {
   box-shadow: var(--green-shadow);
 }
 
-.list-view .list-container .list-header {
+.list-header {
   display: flex;
   align-items: center;
   gap: var(--space-8);
+}
+
+.list-view .list-header {
   padding: var(--space-16);
   border-bottom: 2px solid var(--black);
 }
 
-.list-view .list-container .list-header .circle,
-.board-view .list .list-header .circle {
+.list-header .circle {
   width: 14px;
   height: 14px;
   border-radius: 100%;
   display: inline-block;
 }
 
-.list-view .list-container .list-header .circle.pink,
-.board-view .list .list-header .circle.pink {
+.list-header .circle.pink {
   background-color: var(--pink);
 }
 
-.list-view .list-container .list-header .circle.blue,
-.board-view .list .list-header .circle.blue {
+.list-header .circle.blue {
   background-color: var(--blue);
 }
 
-.list-view .list-container .list-header .circle.green,
-.board-view .list .list-header .circle.green {
+.list-header .circle.green {
   background-color: var(--green);
 }
 
-.list-view .list-container .list-header .text,
-.board-view .list .list-header .text {
+.list-header .text {
   font-weight: 600;
   font-size: var(--font-size-16);
 }
@@ -136,8 +130,12 @@
   padding: var(--space-24) var(--space-16);
 }
 
-.list-view .task-item .task-button {
+.task-item .task-button {
   width: 100%;
+  text-align: left;
+}
+
+.list-view .task-item .task-button {
   display: grid;
   /* 3 equal columns */
   grid-template-columns: repeat(3, 1fr);
@@ -151,26 +149,33 @@
   margin-top: 0;
 }
 
-.list-view .task-item .task-name {
+.task-item .task-name {
   font-weight: 600;
   font-size: var(--font-size-14);
-  text-align: left;
+}
+
+.list-view .task-item .task-name {
   /* expands two columns */
   grid-column: 1 / 3;
 }
 
-.list-view .task-item .task-due-date {
+.task-item .task-due-date {
   font-size: var(--font-size-14);
   color: var(--dark-gray);
-  text-align: left;
   margin-top: var(--space-4);
+}
+
+.list-view .task-item .task-due-date {
   grid-column: 1 / 3;
   /* second row */
   grid-row: 2 / 3;
 }
 
-.list-view .task-item .arrow-icon {
+.task-item .arrow-icon {
   transform: rotate(180deg);
+}
+
+.list-view .task-item .arrow-icon {
   /* last column */
   grid-column: 3 / 4;
   /* expands two rows */
@@ -185,6 +190,7 @@
 /* board view */
 .board-view {
   margin-top: var(--space-32);
+  /* enable horizontal scroll when needed */
   overflow-x: auto;
   padding: 0 var(--space-8) var(--space-8);
   display: grid;
@@ -192,19 +198,13 @@
   column-gap: var(--space-24);
   /* hide scrollbars in Firefox */
   scrollbar-width: none;
-  /* display: none; */
+  display: none;
 }
 
 /* hide scrollbars without impacting scrolling */
 /* Chrome, Safari, Opera, and other WebKit-based browsers */
 .board-view::-webkit-scrollbar {
   display: none;
-}
-
-.board-view .list .list-header {
-  display: flex;
-  align-items: center;
-  gap: var(--space-8);
 }
 
 .board-view .task-item {
@@ -227,27 +227,10 @@
 }
 
 .board-view .task-item .task-button {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-align: left;
   padding: var(--space-24) var(--space-16);
-}
-
-.board-view .task-item .task-name {
-  font-weight: 600;
-  font-size: var(--font-size-14);
-}
-
-.board-view .task-item .task-due-date {
-  font-size: var(--font-size-14);
-  color: var(--dark-gray);
-  margin-top: var(--space-4);
-}
-
-.board-view .task-item .arrow-icon {
-  transform: rotate(180deg);
 }
 
 /* media queries */
