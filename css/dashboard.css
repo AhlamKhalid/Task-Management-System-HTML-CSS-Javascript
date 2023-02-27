@@ -228,7 +228,6 @@ body {
 }
 
 .overlay-content {
-  background-color: var(--pink);
   border: 2px solid var(--black);
   border-radius: var(--radius-8);
   padding: var(--space-32);
@@ -247,9 +246,45 @@ body {
   margin-right: -16px;
 }
 
-.overlay-content .header {
+.set-task-overlay .header {
   font-weight: 600;
   font-size: var(--font-size-24);
+}
+
+.view-task-overlay .header {
+  font-weight: 600;
+  font-size: var(--font-size-16);
+  margin-top: var(--space-16);
+}
+
+.view-task-overlay .header.no-margin {
+  margin-top: 0;
+}
+
+.view-task-overlay .header.min-width {
+  min-width: 90px;
+}
+
+.view-task-overlay .value {
+  margin-top: var(--space-16);
+  line-height: 26px;
+}
+
+.view-task-overlay .status-value {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  background-color: var(--beige);
+  border: 2px solid var(--black);
+  border-radius: var(--radius-8);
+  padding: var(--space-8) var(--space-16);
+  height: var(--input-height);
+}
+
+.view-task-overlay .control-buttons-container {
+  display: flex;
+  gap: var(--space-16);
+  margin-top: var(--space-32);
 }
 
 /* media queries */
