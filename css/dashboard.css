@@ -1,3 +1,8 @@
+body {
+  /* disable scrolling only when overlay is open */
+  /* overflow: hidden; */
+}
+
 .content-container {
   padding-block: var(--space-32);
 }
@@ -13,21 +18,11 @@
   gap: var(--space-16);
 }
 
-.header .add-cta {
-  background-color: var(--blue);
-  border: 2px solid var(--black);
-  box-shadow: var(--black-shadow);
-  border-radius: var(--radius-8);
-  font-weight: 600;
-  padding-inline: var(--space-16);
-  height: var(--input-height);
-}
-
 .header .sign-out-cta {
   font-weight: 600;
 }
 
-/* radio buttons */
+/* radio buttons for view options */
 .radio-buttons-container {
   border-top: 2px solid var(--black);
   border-bottom: 2px solid var(--black);
@@ -44,7 +39,7 @@
   border-right: 2px solid var(--black);
 }
 
-.radio-label {
+.radio-buttons-container .radio-label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +58,7 @@
 }
 
 /* direct sibling */
-.radio-input:checked + .radio-label {
+.radio-buttons-container .radio-input:checked + .radio-label {
   background-color: var(--pink);
 }
 
@@ -100,25 +95,6 @@
 .list-view .list-header {
   padding: var(--space-16);
   border-bottom: 2px solid var(--black);
-}
-
-.list-header .circle {
-  width: 14px;
-  height: 14px;
-  border-radius: 100%;
-  display: inline-block;
-}
-
-.list-header .circle.pink {
-  background-color: var(--pink);
-}
-
-.list-header .circle.blue {
-  background-color: var(--blue);
-}
-
-.list-header .circle.green {
-  background-color: var(--green);
 }
 
 .list-header .text {
@@ -231,6 +207,49 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--space-24) var(--space-16);
+}
+
+/* overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--beige);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  padding: var(--space-48) var(--space-32) var(--space-32);
+  display: grid;
+  place-items: center;
+  /* if content is longer than screen height, enable scrollbar */
+  overflow-y: auto;
+  /* hide overlay */
+  display: none;
+}
+
+.overlay-content {
+  background-color: var(--pink);
+  border: 2px solid var(--black);
+  border-radius: var(--radius-8);
+  padding: var(--space-32);
+  /* full width */
+  width: 100%;
+  max-width: 654px;
+  /* to position close button */
+  position: relative;
+}
+
+.overlay-content .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -25px;
+  margin-right: -16px;
+}
+
+.overlay-content .header {
+  font-weight: 600;
+  font-size: var(--font-size-24);
 }
 
 /* media queries */
