@@ -20,6 +20,16 @@
     <!-- Because body has height 100%, we need a container to wrap the individual 
     elements. The purpose is to add top & bottom padding -->
     <div class="content-container">
+      <!-- success notification -->
+      <div class="notification green-background">
+        <iconify-icon
+          icon="mdi:check-circle-outline"
+          style="color: black"
+          width="24"
+          height="24"
+        ></iconify-icon>
+        <p>The task was added</p>
+      </div>
       <!-- header -->
       <div class="max-width-container">
         <div class="header flex items-center justify-between">
@@ -42,6 +52,7 @@
               name="view-option"
               value="list"
               class="radio-input"
+              checked
             />
             <label for="list" class="radio-label">
               <!-- list-bulleted -->
@@ -61,7 +72,6 @@
               name="view-option"
               value="board"
               class="radio-input"
-              checked
             />
             <label for="board" class="radio-label">
               <!-- grid -->

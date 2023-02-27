@@ -287,6 +287,25 @@ body {
   margin-top: var(--space-32);
 }
 
+.notification {
+  /* relative to body */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-32);
+  height: 80px;
+  font-weight: 600;
+  font-size: var(--font-size-14);
+  width: 100%;
+  max-width: 375px;
+  /* hide */
+  display: none;
+}
+
 /* media queries */
 @media (min-width: 768px) {
   .list-view .task-item .task-button {
