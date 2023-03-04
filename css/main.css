@@ -166,18 +166,6 @@ body {
   border-radius: 100%;
 }
 
-.circle.pink {
-  background-color: var(--pink);
-}
-
-.circle.blue {
-  background-color: var(--blue);
-}
-
-.circle.green {
-  background-color: var(--green);
-}
-
 .form {
   margin-top: var(--space-32);
 }
