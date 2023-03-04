@@ -16,7 +16,7 @@ form * {
 }
 
 button {
-  border: 0;
+  border: none;
   font: inherit;
   background-color: transparent;
   cursor: pointer;
