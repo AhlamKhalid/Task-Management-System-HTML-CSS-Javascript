@@ -295,7 +295,8 @@ body.overflow-hidden {
 .notification {
   /* relative to body */
   position: absolute;
-  top: 0;
+  /* hide */
+  top: -100%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -307,8 +308,12 @@ body.overflow-hidden {
   font-size: var(--font-size-14);
   width: 100%;
   max-width: 375px;
-  /* hide */
-  display: none;
+  transition-property: top;
+  transition-duration: 0.5s;
+}
+
+.notification.show {
+  top: 0;
 }
 
 /* media queries */

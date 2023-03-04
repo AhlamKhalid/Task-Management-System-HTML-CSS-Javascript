@@ -9,6 +9,8 @@ const statusSelect = document.getElementById("status-select");
 const statusDropdown = document.getElementById("status-dropdown");
 const taskItems = document.querySelectorAll(".task-item");
 const viewTaskOverlay = document.getElementById("view-task-overlay");
+const deleteTaskCTA = document.getElementById("delete-task-cta");
+const notification = document.getElementById("notification");
 // the current active overlay
 let activeOverlay = null;
 
@@ -64,4 +66,17 @@ taskItems.forEach((task) => {
     // disable scrolling for content behind the overlay
     document.body.classList.add("overflow-hidden");
   });
+});
+
+// delete a task
+deleteTaskCTA.addEventListener("click", () => {
+  activeOverlay.classList.add("hide");
+  activeOverlay = null;
+  // reenable scrolling
+  document.body.classList.remove("overflow-hidden");
+  // show notification & hide it after a while
+  notification.classList.add("show");
+  setTimeout(() => {
+    notification.classList.remove("show");
+  }, 3000);
 });

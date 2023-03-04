@@ -21,14 +21,14 @@
     elements. The purpose is to add top & bottom padding -->
     <div class="content-container">
       <!-- success notification -->
-      <div class="notification green-background">
+      <div id="notification" class="notification green-background">
         <iconify-icon
           icon="mdi:check-circle-outline"
           style="color: black"
           width="24"
           height="24"
         ></iconify-icon>
-        <p>The task was added</p>
+        <p>The task was deleted</p>
       </div>
       <!-- header -->
       <div class="max-width-container">
@@ -605,6 +605,7 @@
           </button>
           <!-- delete button -->
           <button
+            id="delete-task-cta"
             class="button circle-button pink-background flex justify-center items-center"
           >
             <iconify-icon
