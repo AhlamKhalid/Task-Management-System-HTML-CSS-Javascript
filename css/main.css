@@ -120,6 +120,10 @@ body {
   text-align: center;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .white-background {
   background-color: var(--white);
 }
@@ -231,6 +235,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
+}
+
+.status-dropdown.hide {
   display: none;
 }
 
@@ -238,6 +245,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--space-8);
+  cursor: pointer;
 }
 
 .form .cta-button {

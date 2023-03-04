@@ -1,6 +1,6 @@
-body {
+body.overflow-hidden {
   /* disable scrolling only when overlay is open */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .content-container {
@@ -63,8 +63,8 @@ body {
 }
 
 /* lists view */
-.list-view {
-  /* display: none; */
+.list-view.hide {
+  display: none;
 }
 
 .list-view .list-container {
@@ -174,6 +174,9 @@ body {
   column-gap: var(--space-24);
   /* hide scrollbars in Firefox */
   scrollbar-width: none;
+}
+
+.board-view.hide {
   display: none;
 }
 
@@ -223,7 +226,9 @@ body {
   place-items: center;
   /* if content is longer than screen height, enable scrollbar */
   overflow-y: auto;
-  /* hide overlay */
+}
+
+.overlay.hide {
   display: none;
 }
 

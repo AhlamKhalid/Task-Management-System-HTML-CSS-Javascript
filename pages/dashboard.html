@@ -35,7 +35,10 @@
         <div class="header flex items-center justify-between">
           <h1 class="title">My tasks</h1>
           <div class="buttons-container">
-            <button class="button regular-button blue-background">
+            <button
+              id="add-task-cta"
+              class="button regular-button blue-background"
+            >
               Add task
             </button>
             <button class="sign-out-cta">Sign out</button>
@@ -88,8 +91,8 @@
       </div>
       <!-- tasks -->
       <div class="max-width-container">
-        <!-- lists view -->
-        <div class="list-view">
+        <!-- list view -->
+        <div id="list-view" class="list-view">
           <div class="list-container pink">
             <h2 class="list-header">
               <span class="circle pink"></span><span class="text">To do</span>
@@ -239,7 +242,7 @@
           </div>
         </div>
         <!-- board view -->
-        <div class="board-view">
+        <div id="board-view" class="board-view hide">
           <!-- list -->
           <div>
             <h2 class="list-header">
@@ -428,7 +431,7 @@
       </div>
     </div>
     <!-- add + update task -->
-    <div class="overlay set-task-overlay">
+    <div id="set-task-overlay" class="overlay set-task-overlay hide">
       <div class="overlay-content pink-background">
         <!-- close button -->
         <button
@@ -494,7 +497,8 @@
           </div>
           <h2 class="label">Status</h2>
           <div
-            class="status-select white-background flex items-center justify-between"
+            id="status-select"
+            class="status-select white-background flex items-center justify-between cursor-pointer"
           >
             <span>To do</span>
             <iconify-icon
@@ -505,7 +509,10 @@
               class="arrow-icon"
             ></iconify-icon>
           </div>
-          <ul class="status-dropdown white-background">
+          <ul
+            id="status-dropdown"
+            class="status-dropdown white-background hide"
+          >
             <li>
               <input
                 type="radio"
@@ -555,7 +562,7 @@
       </div>
     </div>
     <!-- view task -->
-    <div class="overlay view-task-overlay">
+    <div id="view-task-overlay" class="overlay view-task-overlay hide">
       <div class="overlay-content green-background">
         <!-- close button -->
         <button
@@ -612,5 +619,7 @@
     </div>
     <!-- import IconifyIcon web component -->
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <!-- js -->
+    <script src="../js/main.js"></script>
   </body>
 </html>
