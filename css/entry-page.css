@@ -1,9 +1,9 @@
-.left-column {
-  padding: var(--space-16);
-}
-
 .right-column {
   display: none;
+}
+
+.left-column {
+  padding: var(--space-16);
 }
 
 .welcoming-title {
@@ -21,7 +21,7 @@
 }
 
 .sign-up-prompt,
-.login-in-prompt {
+.login-prompt {
   font-weight: 500;
   font-size: var(--font-size-14);
   margin-top: var(--space-32);
