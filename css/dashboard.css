@@ -31,7 +31,6 @@ body.overflow-hidden {
 
 .radio-container {
   width: 100px;
-  cursor: pointer;
   border-left: 2px solid var(--black);
 }
 
@@ -236,8 +235,6 @@ body.overflow-hidden {
   border: 2px solid var(--black);
   border-radius: var(--radius-8);
   padding: var(--space-32);
-  /* full width */
-  width: 100%;
   max-width: 654px;
   /* to position close button */
   position: relative;
@@ -294,7 +291,7 @@ body.overflow-hidden {
 
 .notification {
   /* relative to body */
-  position: absolute;
+  position: fixed; /* fixed even on scroll */
   /* hide */
   top: -100%;
   left: 50%;
@@ -320,7 +317,7 @@ body.overflow-hidden {
 @media (min-width: 768px) {
   .list-view .task-item .task-button {
     /* align items to top in firefox */
-    align-items: flex-start;
+    align-items: start;
   }
 
   .list-view .task-item .task-name {
